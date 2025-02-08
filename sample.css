@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#img1{
+  height: 400px;
+  width: 30%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url("pexels-michelangelo-buonarroti-8728382.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  font-family: "Protest Guerrilla", sans-serif;
+}
+
+#logo {
+  margin-top: 150px;
+  width: 30vw;
+  transition: transform 0.4s ease-in-out;
+}
+#logo:hover {
+  transform: scale(1.1);
+}
+
+h1 {
+  color: white;
+  font-size: 2.8rem;
+  text-shadow: 1px 1px 5px #FFD700;
+}
+
+#name,
+#va {
+  color: rgb(229, 129, 174);
+  font-size: 2.5rem;
+  text-shadow: 4px 2px 2px #FFD700;
+  transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+#name:hover,
+#va:hover {
+  color: rgb(34, 34, 181);
+  text-shadow: 5px 3px 3px rgba(255, 215, 0, 0.9);
+}
+
+#voice {
+  width: 130px;
+  display: none;
+}
+
+#btn {
+  width: 35%;
+  background: linear-gradient(to right, rgb(229, 129, 174), rgb(129, 151, 181));
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  color: white;
+  box-shadow: 2px 2px 10px rgba(229, 129, 174, 0.5), 2px 2px 10px rgba(34, 34, 181, 0.5);
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+#btn:hover {
+  box-shadow: 2px 2px 10px rgba(229, 129, 174, 0.5), 2px 2px 10px rgba(34, 34, 181, 0.5), 0 0 15px #FFD700;
+  letter-spacing: 1.5px;
+  transform: scale(1.08);
+}
+#btn:active {
+  transform: scale(0.98);
+  box-shadow: none;
+}
+#btn img {
+  margin-right: 15px;
+  width: 10px;
+  padding: 5px;
+}
+#btn span {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  body {
+    gap: 20px;
+    padding: 10px;
+  }
+  h1 {
+    font-size: 2.2rem;
+  }
+  #name,
+  #va {
+    font-size: 2.2rem;
+  }
+  #btn {
+    width: 70%;
+    font-size: 1rem;
+    padding: 12px;
+  }
+}
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  #name,
+  #va {
+    font-size: 1.8rem;
+  }
+  #btn {
+    width: 80%;
+    font-size: 0.9rem;
+  }
+}/*# sourceMappingURL=sample.css.map */
